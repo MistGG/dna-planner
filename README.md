@@ -40,8 +40,6 @@ Deployed to GitHub Pages on push to `main`:
 
 [https://mistgg.github.io/dna-planner/](https://mistgg.github.io/dna-planner/)
 
-In the repo settings, set **Pages → Build and deployment → Source** to **Deploy from a branch**, branch **gh-pages**, folder **/ (root)**.
-
 ## Data attribution
 
 Character, weapon, and demon wedge data © [Boarhat.gg](https://boarhat.gg). Fan project — not affiliated with Boarhat or the game developers.
