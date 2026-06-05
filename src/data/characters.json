@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "1",
+    "name": "Berenica",
+    "target": "berenica",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/berenica.PNG",
+    "element": "Umbro",
+    "role": "DPS",
+    "proficiency": [
+      "Sword",
+      "Dual Pistols"
+    ],
+    "feature": [
+      "DPS",
+      "Consonance Weapon",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T3",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Consonance Weapon / Weapon DMG",
+      "atkName": "Umbro ATK",
+      "atk": 20,
+      "hp": 100,
+      "shield": 100,
+      "def": 300,
+      "sanity": 150,
+      "weapon": "Sword / Dual Pistols",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 118,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    },
+    "baseWeapon": {
+      "name": "Ymir",
+      "type": "Sword",
+      "attackType": "Slash",
+      "stats": {
+        "Slash ATK": "28.8",
+        "CRIT Chance": "12%",
+        "CRIT Damage": "150%",
+        "ATK Speed": "1",
+        "Trigger Probability": "50%"
+      }
+    }
+  },
+  {
+    "id": "2",
+    "name": "Daphne",
+    "target": "daphne",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/daphne.PNG",
+    "element": "Anemo",
+    "role": "Support",
+    "proficiency": [
+      "Whipsword",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "Support",
+      "Control",
+      "Heal"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support / Control / Heal",
+      "atkName": "Anemo ATK",
+      "atk": 19,
+      "hp": 100,
+      "shield": 100,
+      "def": 285,
+      "sanity": 160,
+      "weapon": "Whipsword / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 118,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "3",
+    "name": "Lynn",
+    "target": "lynn",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/lynn_v2.PNG",
+    "element": "Pyro",
+    "role": "DPS",
+    "proficiency": [
+      "Greatsword",
+      "Dual Pistols"
+    ],
+    "feature": [
+      "DPS",
+      "Consonance Weapon",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Consonance Weapon / Weapon DMG",
+      "atkName": "Pyro ATK",
+      "atk": 23,
+      "hp": 105,
+      "shield": 105,
+      "def": 240,
+      "sanity": 150,
+      "weapon": "Greatsword / Dual Pistols",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    },
+    "baseWeapon": {
+      "name": "Hansel and Gretel",
+      "type": "Dual Pistols",
+      "attackType": "Spike",
+      "stats": {
+        "Spike ATK": "33.6",
+        "CRIT Chance": "12%",
+        "CRIT Damage": "150%",
+        "ATK Speed": "1",
+        "Trigger Probability": "50%",
+        "Multishot": "1"
+      }
+    }
+  },
+  {
+    "id": "4",
+    "name": "Outsider",
+    "target": "outsider",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/outsider_v2.png",
+    "element": "Anemo",
+    "role": "DPS",
+    "proficiency": [
+      "Dual Blades",
+      "Dual Pistols"
+    ],
+    "feature": [
+      "DPS",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T3",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Weapon DMG",
+      "atkName": "Anemo ATK",
+      "atk": 20,
+      "hp": 85,
+      "shield": 195,
+      "def": 285,
+      "sanity": 120,
+      "weapon": "Dual Blades / Dual Pistols",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "5",
+    "name": "Phantasio",
+    "target": "phantasio",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/phantasio_v2.png",
+    "element": "Umbro",
+    "role": "DPS",
+    "proficiency": [
+      "Greatsword",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Umbro ATK",
+      "atk": 21,
+      "hp": 130,
+      "shield": 130,
+      "def": 330,
+      "sanity": 180,
+      "weapon": "Greatsword / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "6",
+    "name": "Randy",
+    "target": "randy",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/randy_v2.PNG",
+    "element": "Electro",
+    "role": "Support",
+    "proficiency": [
+      "Sword",
+      "Pistol"
+    ],
+    "feature": [
+      "Support",
+      "DEF",
+      "Shield"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T3"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support / DEF / Shield",
+      "atkName": "Electro ATK",
+      "atk": 14,
+      "hp": 105,
+      "shield": 105,
+      "def": 510,
+      "sanity": 120,
+      "weapon": "Sword / Pistol",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "7",
+    "name": "Rebecca",
+    "target": "rebecca",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/rebecca.PNG",
+    "element": "Hydro",
+    "role": "DPS",
+    "proficiency": [
+      "Polearm",
+      "Grenade Launcher"
+    ],
+    "feature": [
+      "DPS",
+      "Summon",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Summon / Skill DMG",
+      "atkName": "Hydro ATK",
+      "atk": 25,
+      "hp": 100,
+      "shield": 100,
+      "def": 252,
+      "sanity": 150,
+      "weapon": "Polearm / Grenade Launcher",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "8",
+    "name": "Rhythm",
+    "target": "rhythm",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/rhythm_v2.png",
+    "element": "Electro",
+    "role": "DPS",
+    "proficiency": [
+      "Katana",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Electro ATK",
+      "atk": 22,
+      "hp": 94,
+      "shield": 94,
+      "def": 276,
+      "sanity": 150,
+      "weapon": "Katana / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "9",
+    "name": "Sibylle",
+    "target": "sibylle",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/sibylle_v2.PNG",
+    "element": "Electro",
+    "role": "DPS",
+    "proficiency": [
+      "Whipsword",
+      "Pistol"
+    ],
+    "feature": [
+      "DPS",
+      "Max HP",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T3"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Max HP / Skill DMG",
+      "atkName": "Electro ATK",
+      "atk": 13,
+      "hp": 185,
+      "shield": 120,
+      "def": 345,
+      "sanity": 200,
+      "weapon": "Whipsword / Pistol",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "10",
+    "name": "Tabethe",
+    "target": "tabethe",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/tabethe.PNG",
+    "element": "Hydro",
+    "role": "Support",
+    "proficiency": [
+      "Sword",
+      "Bow"
+    ],
+    "feature": [
+      "Support",
+      "Control",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support / Control / Summon",
+      "atkName": "Hydro ATK",
+      "atk": 17,
+      "hp": 115,
+      "shield": 115,
+      "def": 300,
+      "sanity": 150,
+      "weapon": "Sword / Bow",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "11",
+    "name": "Truffle and Filbert",
+    "target": "truffle-filbert",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/trufle-filbert_v2.png",
+    "element": "Anemo",
+    "role": "Support",
+    "proficiency": [
+      "Polearm",
+      "Bow"
+    ],
+    "feature": [
+      "Support",
+      "Max HP",
+      "Heal"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support / Max HP / Heal",
+      "atkName": "Anemo ATK",
+      "atk": 12,
+      "hp": 185,
+      "shield": 150,
+      "def": 310,
+      "sanity": 120,
+      "weapon": "Polearm / Bow",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "12",
+    "name": "Yale and Oliver",
+    "target": "yale-oliver",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/yale-oliver.PNG",
+    "element": "Pyro",
+    "role": "DPS",
+    "proficiency": [
+      "Sword",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Pyro ATK",
+      "atk": 21,
+      "hp": 96,
+      "shield": 96,
+      "def": 288,
+      "sanity": 180,
+      "weapon": "Sword / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "13",
+    "name": "Psyche",
+    "target": "psyche",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/psyche.PNG",
+    "element": "Anemo",
+    "role": "DPS",
+    "proficiency": [
+      "Polearm",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Consonance Weapon",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Consonance Weapon / Weapon DMG / Skill DMG",
+      "atkName": "Anemo ATK",
+      "atk": 28,
+      "hp": 70,
+      "shield": 140,
+      "def": 252,
+      "sanity": 150,
+      "weapon": "Polearm / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    },
+    "baseWeapon": {
+      "name": "Icarus",
+      "type": "Assault Rifle",
+      "attackType": "Spike",
+      "stats": {
+        "Spike ATK": "6",
+        "CRIT Chance": "33%",
+        "CRIT Damage": "200%",
+        "ATK Speed": "1",
+        "Trigger Probability": "20%",
+        "Multishot": "1"
+      }
+    }
+  },
+  {
+    "id": "14",
+    "name": "Yuming",
+    "target": "yuming",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/yuming.PNG",
+    "element": "Electro",
+    "role": "DPS",
+    "proficiency": [
+      "Polearm",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Skill DMG",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG / Weapon DMG",
+      "atkName": "Electro ATK",
+      "atk": 22,
+      "hp": 150,
+      "shield": 50,
+      "def": 300,
+      "sanity": 200,
+      "weapon": "Polearm / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "15",
+    "name": "Zhiliu",
+    "target": "zhiliu",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/zhiliu.PNG",
+    "element": "Electro",
+    "role": "DPS",
+    "proficiency": [
+      "Greatsword",
+      "Dual Pistols"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Electro ATK",
+      "atk": 24,
+      "hp": 80,
+      "shield": 140,
+      "def": 252,
+      "sanity": 240,
+      "weapon": "Greatsword / Dual Pistols",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "16",
+    "name": "Fina",
+    "target": "fina",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/fina.PNG",
+    "element": "Lumino",
+    "role": "Support",
+    "proficiency": [
+      "Sword",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "Support",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support",
+      "atkName": "Lumino ATK",
+      "atk": 22,
+      "hp": 105,
+      "shield": 105,
+      "def": 315,
+      "sanity": 160,
+      "weapon": "Sword / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "17",
+    "name": "Fushu",
+    "target": "fushu",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/fushu_v2.png",
+    "element": "Hydro",
+    "role": "Support",
+    "proficiency": [
+      "Whipsword",
+      "Bow"
+    ],
+    "feature": [
+      "Support",
+      "Sanity Recovery",
+      "Heal"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support / Sanity Recovery / Heal",
+      "atkName": "Hydro ATK",
+      "atk": 23,
+      "hp": 105,
+      "shield": 105,
+      "def": 315,
+      "sanity": 150,
+      "weapon": "Whipsword / Bow",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "18",
+    "name": "Hellfire",
+    "target": "hellfire",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/hellfire.PNG",
+    "element": "Pyro",
+    "role": "DPS",
+    "proficiency": [
+      "Greatsword",
+      "Grenade Launcher"
+    ],
+    "feature": [
+      "DPS",
+      "Max HP",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Max HP / Skill DMG",
+      "atkName": "Pyro ATK",
+      "atk": 15,
+      "hp": 183,
+      "shield": 0,
+      "def": 345,
+      "sanity": 120,
+      "weapon": "Greatsword / Grenade Launcher",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "19",
+    "name": "Hilda",
+    "target": "hilda",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/hilda.PNG",
+    "element": "Pyro",
+    "role": "DPS",
+    "proficiency": [
+      "Dual Blades",
+      "Grenade Launcher"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "",
+      "Boss": ""
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG / Weapon DMG",
+      "atkName": "Pyro ATK",
+      "atk": 27,
+      "hp": 90,
+      "shield": 90,
+      "def": 265,
+      "sanity": 200,
+      "weapon": "Dual Blades / Grenade Launcher",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "20",
+    "name": "Kezhou",
+    "target": "kezhou",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/kezhou.PNG",
+    "element": "Lumino",
+    "role": "DPS",
+    "proficiency": [
+      "Sword",
+      "Dual Pistols",
+      "Whipsword",
+      "Assault Rifle",
+      "Greatsword",
+      "Grenade Launcher",
+      "Dual Blades",
+      "Katana",
+      "Pistol",
+      "Polearm",
+      "Shotgun",
+      "Bow"
+    ],
+    "feature": [
+      "DPS",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Weapon DMG",
+      "atkName": "Lumnino ATK",
+      "atk": 25,
+      "hp": 110,
+      "shield": 110,
+      "def": 315,
+      "sanity": 180,
+      "weapon": "All Types",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "21",
+    "name": "Lady Nifle",
+    "target": "lady-nifle",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/lady-nifle_v2.PNG",
+    "element": "Lumino",
+    "role": "DPS",
+    "proficiency": [
+      "Katana",
+      "Pistol"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Lumino ATK",
+      "atk": 21,
+      "hp": 105,
+      "shield": 105,
+      "def": 255,
+      "sanity": 180,
+      "weapon": "Katana / Pistol",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "22",
+    "name": "Margie",
+    "target": "margie",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/margie.PNG",
+    "element": "Pyro",
+    "role": "DPS",
+    "proficiency": [
+      "Polearm",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T3",
+      "Boss": "T3"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Control / Skill DMG",
+      "atkName": "Pyro ATK",
+      "atk": 21,
+      "hp": 83,
+      "shield": 83,
+      "def": 264,
+      "sanity": 160,
+      "weapon": "Polearm / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "23",
+    "name": "Margie (Support)",
+    "target": "margie",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/margie.PNG",
+    "element": "Pyro",
+    "role": "Support",
+    "proficiency": [
+      "Polearm",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Skill Intensity"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Control / Skill DMG",
+      "atkName": "Pyro ATK",
+      "atk": 21,
+      "hp": 83,
+      "shield": 83,
+      "def": 264,
+      "sanity": 160,
+      "weapon": "Polearm / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "24",
+    "name": "Lisbell",
+    "target": "lisbell",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/lisbell.PNG",
+    "element": "Lumino",
+    "role": "DPS",
+    "proficiency": [
+      "Greatsword",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Consonance Weapon",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Consonance Weapon / Weapon DMG",
+      "atkName": "Lumino ATK",
+      "atk": 24,
+      "hp": 90,
+      "shield": 90,
+      "def": 240,
+      "sanity": 150,
+      "weapon": "Greatsword / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    },
+    "baseWeapon": {
+      "name": "Samael",
+      "type": "Greatsword",
+      "attackType": "Smash",
+      "stats": {
+        "Smash ATK": "18",
+        "CRIT Chance": "20%",
+        "CRIT Damage": "200%",
+        "ATK Speed": "1",
+        "Trigger Probability": "25%"
+      }
+    }
+  },
+  {
+    "id": "25",
+    "name": "Protagonist",
+    "target": "protagonist",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/player.PNG",
+    "element": "Lumino",
+    "role": "Support",
+    "proficiency": [
+      "Sword",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "Support"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "Support",
+      "atkName": "Lumino ATK",
+      "atk": 22,
+      "hp": 120,
+      "shield": 120,
+      "def": 300,
+      "sanity": 100,
+      "weapon": "Sword / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "26",
+    "name": "Yuming (Support)",
+    "target": "yuming",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/yuming.PNG",
+    "element": "Electro",
+    "role": "Support",
+    "proficiency": [
+      "Polearm",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Skill DMG",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG / Weapon DMG",
+      "atkName": "Electro ATK",
+      "atk": 22,
+      "hp": 150,
+      "shield": 50,
+      "def": 300,
+      "sanity": 200,
+      "weapon": "Polearm / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "27",
+    "name": "Su Yi",
+    "target": "suyi",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/suyi.PNG",
+    "element": "Lumino",
+    "role": "DPS",
+    "proficiency": [
+      "Polearm",
+      "Shotgun"
+    ],
+    "feature": [
+      "DPS",
+      "Skill DMG"
+    ],
+    "tier": {
+      "Farming": "T0",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Skill DMG",
+      "atkName": "Lumino ATK",
+      "atk": 29,
+      "hp": 70,
+      "shield": 140,
+      "def": 220,
+      "sanity": 150,
+      "weapon": "Polearm / Shotgun",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "28",
+    "name": "Camilla",
+    "target": "camilla",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/camilla.PNG",
+    "element": "Pyro",
+    "role": "Support",
+    "proficiency": [
+      "Whipblade",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Support",
+      "Skill DMG"
+    ],
+    "tier": {
+      "Farming": "T2",
+      "Boss": "T2"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Support / Skill DMG",
+      "atkName": "Pyro ATK",
+      "atk": 25,
+      "hp": 120,
+      "shield": 120,
+      "def": 330,
+      "sanity": 160,
+      "weapon": "Whipblade / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "29",
+    "name": "Flora",
+    "target": "flora",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/flora.PNG",
+    "element": "Umbro",
+    "role": "DPS",
+    "proficiency": [
+      "Sword",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T0"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Weapon DMG",
+      "atkName": "Umbro ATK",
+      "atk": 26,
+      "hp": 130,
+      "shield": 130,
+      "def": 350,
+      "sanity": 180,
+      "weapon": "Sword / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  },
+  {
+    "id": "30",
+    "name": "Protagonist (Umbro)",
+    "target": "protagonist-umbro",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/character/player_umbro.PNG",
+    "element": "Umbro",
+    "role": "Support",
+    "proficiency": [
+      "Sword",
+      "Assault Rifle"
+    ],
+    "feature": [
+      "DPS",
+      "Weapon DMG"
+    ],
+    "tier": {
+      "Farming": "T1",
+      "Boss": "T1"
+    },
+    "released": true,
+    "baseStats": {
+      "feature": "DPS / Weapon DMG",
+      "atkName": "Umbro ATK",
+      "atk": 20,
+      "hp": 100,
+      "shield": 100,
+      "def": 300,
+      "sanity": 150,
+      "weapon": "Sword / Assault Rifle",
+      "skillIntensity": 100,
+      "skillRange": 100,
+      "skillDuration": 100,
+      "skillEfficiency": 100,
+      "morale": 0,
+      "resolve": 0,
+      "statNames": {
+        "skillIntensity": "Skill Intensity",
+        "skillRange": "Skill Range",
+        "skillDuration": "Skill Duration",
+        "skillEfficiency": "Skill Efficiency",
+        "morale": "Morale",
+        "resolve": "Resolve"
+      }
+    }
+  }
+]

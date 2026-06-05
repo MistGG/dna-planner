@@ -1,0 +1,1897 @@
+[
+  {
+    "id": "1",
+    "name": "Dreamweaver's Feather",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/dreamweaver_feather_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Lumino",
+    "attackType": "Slash",
+    "skill": "Skill Range +(30% / 36% / 42% / 48% / 54% / 60%). When a Lumino character deals additional damage, it will have a 30% chance to grant 1 stack that increases ATK for the nearby teammates by (9% / 10.8% / 12.6% / 14.4% / 16.2% / 18%) for 15s, up to 10 stacks.",
+    "stats": {
+      "Slash ATK": "15 | 188.28",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "240%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "50",
+      "Max Ammo": "120",
+      "Ammo Conversion Rate": "150%"
+    },
+    "attribute": {
+      "Beam Damage": "20%",
+      "Firing Interval": "0.13 shots/s"
+    },
+    "baseBuff": {
+      "skillRange": [
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Osteobreaker",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/osteobreaker_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Duration (+18% / 21.6% / 25.2% / 28.8% / 32.4% / 36%).",
+    "stats": {
+      "Spike ATK": "17 | 213.39",
+      "CRIT Chance": "23%",
+      "CRIT Damage": "225%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%",
+      "Multishot": "1",
+      "Mag Capacity": "50",
+      "Max Ammo": "200",
+      "Ammo Conversion Rate": "200%"
+    },
+    "attribute": {
+      "Projectile Damage": "16%",
+      "Firing Interval": "0.1 shots/s"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        18,
+        21.6,
+        25.2,
+        28.8,
+        32.4,
+        36
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Submerged Serenade",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/submerged_serenade_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Damage (+62.5% / 75% / 87.5% / 100% / 112.5% / 125%). Projectiles that hit the environment or travel a certain distance return to the user's position and increase the Ammo Count by 1. for each additional Ammo Count gained, the damage dealt by this weapon is increased by (4.5% / 5.4% / 6.3% / 7.2% / 8.1% / 9%), up to a maximum increase of (45% / 54% / 63% / 72% / 81% / 90%).",
+    "stats": {
+      "Slash ATK": "16 | 200.84",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "25%",
+      "Multishot": "1",
+      "Max Ammo": "10",
+      "Ammo Conversion Rate": "10%"
+    },
+    "attribute": {
+      "Projectile Damage": "6%",
+      "Firing Interval": "0.1 shots/s"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Daybreak Hymn",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/daybreak_hymn_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Multishot (+37.5% / 45% / 52.5% / 60% / 67.5% / 75%). When dealing damage with this weapon, the lower the remaining Ammo percentage, the higher the damage dealt, up to a maximum increase of (45% / 54% / 63% / 72% / 81% / 90%), with full effect when the Ammo count is below 20%.",
+    "stats": {
+      "Spike ATK": "18 | 225.94",
+      "CRIT Chance": "26%",
+      "CRIT Damage": "245%",
+      "ATK Speed": "1",
+      "Trigger Probability": "24%",
+      "Multishot": "1",
+      "Mag Capacity": "30",
+      "Max Ammo": "100",
+      "Ammo Conversion Rate": "110%"
+    },
+    "attribute": {
+      "Beam Damage": "12%",
+      "Beam DMG - Phase 2": "20%",
+      "Beam DMG - Phase 3": "37%",
+      "Firing Interval": "0.5 shots/s",
+      "Hit Firing Interval - Phase 2": "0.35 shots/s",
+      "Firing Interval - Phase 3": "0.1 shots/s"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Exiled Thunderwyrm",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/exiled_thunderwyrm_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Electro",
+    "attackType": "Spike",
+    "skill": "Trigger Probability (+75% / 90% / 105% / 120% / 135% / 150%). Fires a beam that can richochets off the target and hits up to 4 enemis within range. When an Electro character triggers bonus effects with this weapon, the user gains (+45% / 54% / 63% / 81% / 90%) Weapon Damage for 10s.",
+    "stats": {
+      "Spike ATK": "15 | 188.28",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "30",
+      "Max Ammo": "160",
+      "Ammo Conversion Rate": "160%"
+    },
+    "attribute": {
+      "Beam Damage": "17.6%",
+      "Ricochet DMG": "17.6%",
+      "Firing Interval": "0.1 shots/s"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Flamme De Epuration",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/flamme_de_epuration_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "Trigger Probability (+75% / 90% / 105% / 120% / 135% / 150%). When this weapon triggers a bonus effect on hit, there is (30% / 36% / 42% / 48% / 54% / 60%) chance to reload 1 projectile.",
+    "stats": {
+      "Slash ATK": "19 | 238.49",
+      "CRIT Chance": "15%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%",
+      "Multishot": "1",
+      "Mag Capacity": "50",
+      "Max Ammo": "120",
+      "Ammo Conversion Rate": "150%"
+    },
+    "attribute": {
+      "Beam Damage": "20%",
+      "Firing Interval": "0.13 shots/s"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Soulrend",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/soulrend_v1.PNG",
+    "type": "Bow",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Range (+36% / 43.2% / 50.4% / 57.6% / 64.8% / 72%).",
+    "stats": {
+      "Smash ATK": "19 | 238.49",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "205%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%",
+      "Multishot": "1",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "475%"
+    },
+    "attribute": {
+      "Projectile Damage": "6.3%",
+      "Number of Projectiles": "7"
+    },
+    "baseBuff": {
+      "skillRange": [
+        36,
+        43.2,
+        50.4,
+        57.6,
+        64.8,
+        72
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "Arclight Apocalypse",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/arclight_apocalypses_v2.PNG",
+    "type": "Bow",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Duration (+15% / 18% / 21% / 24% / 27% / 30%). Landing a CRIT hit with this weapon randomly grants other allies one of the following for 16s : (+10% / 12% / 14% / 16% / 18% / 20%) ATK, (+10% / 12% / 14% / 16% / 18% / 20%) DEF, (+7.5% / 9% / 10.5% / 12% / 13.5% / 15%) Skill Intensity or (+10% / 12% / 14% / 16% /18% / 20%) Skill Duration.",
+    "stats": {
+      "Smash ATK": "18 | 225.94",
+      "CRIT Chance": "26%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "475%"
+    },
+    "attribute": {
+      "Projectile Damage": "6.3%",
+      "Number of Projectiles": "7"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "name": "Embla Inflorescence",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/embla_inflorescence_v2.PNG",
+    "type": "Bow",
+    "element": "Lumino",
+    "attackType": "Slash",
+    "skill": "Skill Range (+30% / 36% / 42% / 48% / 54% / 60%). While charging, gradually locks onto nearby enemies. Upon release, fires tracking arrows at all locked targets. When a Lumino character deals Skill Damage, grants (+35% / 42% / 49% / 56% / 63% / 70%) Skill DMG for 6s.",
+    "stats": {
+      "Slash ATK": "15 | 188.28",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%",
+      "Multishot": "1",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "125%"
+    },
+    "attribute": {
+      "Projectile DMG": "18%",
+      "Projectile Calibre": "0.2m"
+    },
+    "baseBuff": {
+      "skillRange": [
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Searing Sandwhisper",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/searing_sandwhisper_v1.PNG",
+    "type": "Bow",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Speed (+25% / 30% / 35% / 40% / 45% / 50%). Each enemy struck by a single arrow increases the arrow's damage by (9% / 10.8% / 12.6% / 14.4% / 16.2% / 18%), with a maximum increase of (45% / 54% / 63% / 72% / 81% / 90%).",
+    "stats": {
+      "Spike ATK": "17 | 213.39",
+      "CRIT Chance": "19%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Max Ammo": "50",
+      "Ammo Conversion Rate": "50%"
+    },
+    "attribute": {
+      "Projectile DMG": "35%",
+      "Projectile DMG - Phase 2": "60.0%",
+      "Projectile DMG - Phase 3": "143.0%",
+      "Projectile Calibre": "0.2m",
+      "Projectile Calibre - Phase 2": "1.0m",
+      "Projectile Calibre - Phase 3": "1.0m"
+    }
+  },
+  {
+    "id": "11",
+    "name": "Fathomless Sharkgaze",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/fathomless_sharkgaze_v1.PNG",
+    "type": "Dual Blades",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Range (+36% / 43.2% / 50.4% / 57.6% / 64.8% / 72%).",
+    "stats": {
+      "Spike ATK": "20 | 251.04",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "235%",
+      "ATK Speed": "1",
+      "Trigger Probability": "28%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 2",
+      "2-Hit DMG": "25% x 2",
+      "3-Hit DMG": "38%",
+      "4-Hit DMG": "43% x 3",
+      "Charged Attack DMG": "20% x 6",
+      "Charged Attack Finisher DMG": "55%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "36% x 2"
+    },
+    "baseBuff": {
+      "skillRange": [
+        36,
+        43.2,
+        50.4,
+        57.6,
+        64.8,
+        72
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Exiled Fangs",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/exiled_fangs_v1.PNG",
+    "type": "Dual Blades",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "ATK Speed (+25% / 30% / 35% /40% / 45% / 50%). When dealing damage with this weapon triggers Bonus Effect, if the user's HP percentage is below 25%, there's a 45% chance to restore (1.5% / 1.8% / 2.1% / 2.4% / 3.7% / 4%) of the character's Max HP.",
+    "stats": {
+      "Slash ATK": "21 | 263.6",
+      "CRIT Chance": "16%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 2",
+      "2-Hit DMG": "25% x 2",
+      "3-Hit DMG": "38%",
+      "4-Hit DMG": "43% x 3",
+      "Charged Attack DMG": "20% x 6",
+      "Charged Attack Finisher DMG": "55%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "36% x 2"
+    }
+  },
+  {
+    "id": "13",
+    "name": "Aurate Yore",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/aurate_yore_v1.PNG",
+    "type": "Dual Blades",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "CRIT Damage (+62.5% / 74.4% / 86.8% / 99.2% / 112.5% / 125%). Sliding attacks with this weapon gain (+75% / 90% / 105% / 120% / 135% / 150% )  CRIT Chance.",
+    "stats": {
+      "Smash ATK": "(18 | 225.94)",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 2",
+      "2-Hit DMG": "25% x 2",
+      "3-Hit DMG": "38%",
+      "4-Hit DMG": "43% x 3",
+      "Charged Attack DMG": "20% x 6",
+      "Charged Attack Finisher DMG": "55%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "36% x 2"
+    }
+  },
+  {
+    "id": "14",
+    "name": "Bluecurrent Pulse",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/bluecurrent_pulse_v2.PNG",
+    "type": "Dual Pistols",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Duration (+15% / 18% / 21% / 24% / 27% / 30%). When it's projectiles hit enemies or the environment, they bounce once. When dealing damage with this weapon, increases Dual Pistols Damage by (45% / 54% / 63% / 72% / 81% / 90%) for (15s / 18s / 21s / 24s / 27s / 30s).",
+    "stats": {
+      "Spike ATK": "19 | 238.49",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "225%",
+      "ATK Speed": "1",
+      "Trigger Probability": "25%",
+      "Multishot": "1",
+      "Mag Capacity": "20",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "60%"
+    },
+    "attribute": {
+      "Projectile DMG": "47%",
+      "Ricochet DMG": "47%"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "Sacrosanct Chorus",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/sacrosanct_chorus_v1.PNG",
+    "type": "Dual Pistols",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Chance (+50% / 60% / 70% / 80% / 90% / 100%). Dealing CRIT Damage with this weapon grants (+6.2% / 7.44% / 8.68% / 9.92% / 11.16% / 12.5%) Multishot for 12s (up to 10 stacks). Effect is removed when switching weapons.",
+    "stats": {
+      "Slash ATK": "18 | 225.94",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "20",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "60%"
+    },
+    "attribute": {
+      "Projectile DMG": "47%"
+    }
+  },
+  {
+    "id": "16",
+    "name": "Excresduo",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/excresduo_v1.PNG",
+    "type": "Dual Pistols",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Intensity (+24% / 28.8% / 33.6% / 38.4% / 43.2% / 48%).",
+    "stats": {
+      "Spike ATK": "21 | 263.6",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "28%",
+      "Multishot": "1",
+      "Mag Capacity": "20",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "60%"
+    },
+    "attribute": {
+      "Projectile DMG": "47%"
+    },
+    "baseBuff": {
+      "skillIntensity": [
+        24,
+        28.8,
+        33.6,
+        38.4,
+        43.2,
+        48
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "name": "Ironforger",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/ironforger_v1.PNG",
+    "type": "Greatsword",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Chance (+50% / 60% / 70% / 80% / 90% / 100%). When dealing damage with this weapon triggers Bonus Effect, there is a (2.1% / 2.94% / 3.36% / 3.78% / 4.2%) chance to increase the Combo Level to maximum.",
+    "stats": {
+      "Slash ATK": "18 | 225.94",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "205%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "45%",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "120%",
+      "Charged Attack DMG": "55%",
+      "Charged Attack Finisher DMG": "50%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "73%"
+    }
+  },
+  {
+    "id": "18",
+    "name": "Punitive Inferno",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/punitive_inferno_v1.PNG",
+    "type": "Greatsword",
+    "element": "Pyro",
+    "attackType": "Smash",
+    "skill": "Max HP (+50% / 60% / 70% / 80% / 90% / 100%). When a Pyro character takes damage, grants (+15% / 18% / 21% / 24% / 27% / 30%) Skill Duration for 8s (up to 3 stacks).",
+    "stats": {
+      "Smash ATK": "19 | 238.49",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "205%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "45%",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "120%",
+      "Charged Attack DMG": "55%",
+      "Charged Attack Finisher DMG": "50%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "73%"
+    },
+    "baseBuff": {
+      "hp": [
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "name": "Pyrothirst",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/pyrothirst_v2.PNG",
+    "type": "Greatsword",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Duration (+18% / 21.6% / 25.2% / 28.8% / 32.4% / 36%).",
+    "stats": {
+      "Smash ATK": "17 | 213.39",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "45%",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "120%",
+      "Charged Attack DMG": "55%",
+      "Charged Attack Finisher DMG": "50%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "73%"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        18,
+        21.6,
+        25.2,
+        28.8,
+        32.4,
+        36
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "name": "Stellar Finality",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/stellar_finality_v1.PNG",
+    "type": "Grenade Launcher",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Explosion Range (+0.2 / 0.26 / 0.32 / 0.38 / 0.44 / 0.5). When it's projectiles explode, they split into 6 additional projectiles that explode and deal damage. When defeating a target with this weapon, grants 1 stack that increased CRIT Damage by (8.8% / 10.56% / 12.32% / 14.08% / 15.84% / 17.5%) for 15s, up to 10 stacks. This effect is removed when switching to another weapon.",
+    "stats": {
+      "Smash ATK": "14 | 175.75",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "240%",
+      "ATK Speed": "1",
+      "Trigger Probability": "18%",
+      "Projectile Explosion Range": "0.5",
+      "Multishot": "1",
+      "Mag Capacity": "8",
+      "Max Ammo": "40",
+      "Ammo Conversion Rate": "25%"
+    },
+    "attribute": {
+      "Explosion DMG": "80%",
+      "Explosion DMG - Phase 2": "15%",
+      "Explosion Radius": "3m",
+      "2-Hit Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "21",
+    "name": "Guixu Ratchet",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/guixu_ratchet_v1.PNG",
+    "type": "Grenade Launcher",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Damage (+62.5% / 75% / 87.5% / 100% / 112.5% / 125%). When its projectiles hit enemies or the environment, they split into 2 additional projectiles that continue to travel. After switching to this weapon, increases Multishot by (38.0% / 45.6% / 53.2% / 60.8% / 68.4% / 73% ), which decreases over time. This effect can only be triggered once every 10s and is removed when switching to another weapon.",
+    "stats": {
+      "Slash ATK": "16 | 200.84",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Mag Capacity": "8",
+      "Max Ammo": "20",
+      "Ammo Conversion Rate": "30%"
+    },
+    "attribute": {
+      "Explosion DMG": "15%",
+      "DoT": "4%",
+      "Explosion DMG - Phase 2": "8%",
+      "Explosion Radius": "3m",
+      "2-Hit Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "22",
+    "name": "Destructo",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/destructo_v1.PNG",
+    "type": "Grenade Launcher",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Range (+36% / 43.2% / 50.4% / 57.6% / 64.8% / 72%).",
+    "stats": {
+      "Smash ATK": "18 | 225.94",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "180%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Mag Capacity": "8",
+      "Max Ammo": "40",
+      "Ammo Conversion Rate": "35%"
+    },
+    "attribute": {
+      "Explosion DMG": "95%",
+      "Explosion Radius": "3m"
+    },
+    "baseBuff": {
+      "skillRange": [
+        36,
+        43.2,
+        50.4,
+        57.6,
+        64.8,
+        72
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "name": "Silverwhite Edict",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/silverwhite_edict_v1.PNG",
+    "type": "Grenade Launcher",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Speed (+25.0 / 30% / 35% / 40% / 45% / 50%)%. When this weapon triggers a bonus effect on hit, grants (+5.0% / 6% / 7% / 8% / 9% / 10%) ATK Speed for 12.0s (up to 10.0 stacks). Effect is removed when switching weapons.",
+    "stats": {
+      "Spike ATK": "19 | 238.49",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "235%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%",
+      "Multishot": "1",
+      "Mag Capacity": "200",
+      "Max Ammo": "500",
+      "Ammo Conversion Rate": "330%"
+    },
+    "attribute": {
+      "Projectile DMG": "7.2%",
+      "Firing Interval": "0.35shots/s",
+      "Firing Interval - Phase 2": "0.25shots/s",
+      "Firing Interval - Phase 3": "0.15shots/s",
+      "Firing Interval - Phase 4": "0.05shots/s"
+    }
+  },
+  {
+    "id": "24",
+    "name": "Sacred Favour",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/sacred_favour_v1.PNG",
+    "type": "Katana",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Character ATK (+50.0% / 60% / 70% / 80% / 90% / 100%). Charged Attacks with this weapon grant (+75.0% / 90% / 105% / 120% / 135% / 150%) CRIT Damage for 6.0s. Effect is removed when switching weapons.",
+    "stats": {
+      "Spike ATK": "20 | 251.04",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "250%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 3",
+      "2-Hit DMG": "30% x 4",
+      "3-Hit DMG": "40% x 2 + 45%",
+      "4-Hit DMG": "85%",
+      "Charged Attack DMG": "10% x 9",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "atk": [
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "name": "Momiji Itteki",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/momiji_itteki_v1.PNG",
+    "type": "Katana",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Damage (+62.5% / 74.4% / 86.8% / 99.2% / 112.5% / 125%). When dealing damage with this weapon, increase Damage Dealt by (9.0% / 10.8% / 12.6% / 14.4% / 16.2% / 18%), with an additional 9.0% increase per Combo Level.",
+    "stats": {
+      "Slash ATK": "19 | 238.49",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "225%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 3",
+      "2-Hit DMG": "30% x 4",
+      "3-Hit DMG": "40% x 2 + 45%",
+      "4-Hit DMG": "85%",
+      "Charged Attack DMG": "10% x 9",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "26",
+    "name": "Withershade",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/withershade_v1.PNG",
+    "type": "Katana",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Range (+36% / 43.2% / 50.4% / 57.6% / 64.8% / 72%).",
+    "stats": {
+      "Smash ATK": "17 | 213.39",
+      "CRIT Chance": "23%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 3",
+      "2-Hit DMG": "30% x 4",
+      "3-Hit DMG": "40% x 2 + 45%",
+      "4-Hit DMG": "85%",
+      "Charged Attack DMG": "10% x 9",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "skillRange": [
+        36,
+        43.2,
+        50.4,
+        57.6,
+        64.8,
+        72
+      ]
+    }
+  },
+  {
+    "id": "27",
+    "name": "Entropic Singularity",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/entropic_singularity_v1.PNG",
+    "type": "Pistol",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "Trigger Probability (+75.0% / 90% / 105% / 120% / 135% / 150%). Each shot with this weapon has a chance (based on its Weapon Trigger Probability) to fire an extra projectile at no Ammo cost, dealing AoE Damage equal to (50.0% / 60% / 70% / 80% / 90% / 100%) of its ATK.",
+    "stats": {
+      "Slash ATK": "16 | 200.84",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%",
+      "Multishot": "1",
+      "Mag Capacity": "20",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "40%"
+    },
+    "attribute": {
+      "Projectile DMG": "71%",
+      "Explosion DMG": "50%",
+      "Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "28",
+    "name": "Sacrosanct Decree",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/sacrosanct_decree_v1.PNG",
+    "type": "Pistol",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Multishot (+37.5% / 45% / 52.5% / 60% / 67.5% / 75%). When this weapon triggers a bonus effect on hit, increases Melee Weapon DMG by (35.0% / 42% / 49% / 56% / 63% / 70%) for 12.0s.",
+    "stats": {
+      "Spike ATK": "18 | 225.94",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "205%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%",
+      "Multishot": "1",
+      "Mag Capacity": "15",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "40%"
+    },
+    "attribute": {
+      "Projectile DMG": "71%"
+    }
+  },
+  {
+    "id": "29",
+    "name": "Rendhusk",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/rendhusk_v1.PNG",
+    "type": "Pistol",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Character ATK (+60% / 72% / 84% / 96% / 108% / 120%).",
+    "stats": {
+      "Smash ATK": "15 | 188.28",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "230%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "15",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "40%"
+    },
+    "attribute": {
+      "Projectile DMG": "71%"
+    },
+    "baseBuff": {
+      "atk": [
+        60,
+        72,
+        84,
+        96,
+        108,
+        120
+      ]
+    }
+  },
+  {
+    "id": "30",
+    "name": "Elpides Abound",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/elpides_abound_v2.PNG",
+    "type": "Polearm",
+    "element": "Anemo",
+    "attackType": "Slash",
+    "skill": "Resolve (+5.0% / 6% / 7% / 8% / 9% / 10%). After an Anemo character uses their Ultimate Skill, grants [Thousand Winds' Blessing]: increases Resolve by (8.0% / 9.6% / 11.2% / 12.8% / 14.4% / 16%) and ATK Speed by (15.0% / 18% / 21% / 24% / 27% / 30%) for 15.0s. Each instance of Skill Damage or Ranged Weapon Damage extends the duration by 0.2s.",
+    "stats": {
+      "Slash ATK": "22 | 276.15",
+      "CRIT Chance": "23%",
+      "CRIT Damage": "250%",
+      "ATK Speed": "1",
+      "Trigger Probability": "10%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25% x 3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40%",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    },
+    "baseBuff": {
+      "resolve": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "id": "31",
+    "name": "Siren's Kiss",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/siren_kiss_v3.PNG",
+    "type": "Polearm",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Range (+30% / 36% / 42% / 48% / 54% / 60%). When performing Normal Attacks with this weapon, grants a (3.6% / 4.32% / 5.04% / 5.76% / 6.48% / 7.2%) ATK Speed Increase for 15.0s (up to 12.0 stacks). Effect is removed when switching weapons.",
+    "stats": {
+      "Spike ATK": "21 | 263.6",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "22%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25% x 3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40%",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    },
+    "baseBuff": {
+      "skillRange": [
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ]
+    }
+  },
+  {
+    "id": "32",
+    "name": "Vernal Jade Halberd",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/vernal_jade_halberd_v1.PNG",
+    "type": "Polearm",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Speed (+25.0% / 30% / 35% / 40% / 45% / 50%). Deals (+45.0% / 54% / 63% / 72% / 81% / 90%) damage to targets afflicted with bonus effects.",
+    "stats": {
+      "Slash ATK": "18 | 225.94",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25% x 3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40%",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    }
+  },
+  {
+    "id": "33",
+    "name": "Wanewraith",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/wanewraith_v1.PNG",
+    "type": "Polearm",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "Skill Intensity (+24% / 28.8% / 33.6% / 38.4% / 43.2% / 48%).",
+    "stats": {
+      "Slash ATK": "19 | 238.49",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25% x 3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40%",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    },
+    "baseBuff": {
+      "skillIntensity": [
+        24,
+        38.8,
+        33.6,
+        38.4,
+        43.2,
+        48
+      ]
+    }
+  },
+  {
+    "id": "34",
+    "name": "Day of Sacred Verdict",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/day_of_sacred_verdict_v1.PNG",
+    "type": "Shotgun",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Damage (+62.5% / 75% / 87.5% / 100% / 112.5%  / 125%). Fired projectiles track the crosshair. When dealing damage with this weapon, the farther the target, the higher the damage, up to a maximum increase of (45.0% / 54% / 63% / 72% / 81% / 90%).",
+    "stats": {
+      "Slash ATK": "17 | 213.39",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "5",
+      "Max Ammo": "60",
+      "Ammo Conversion Rate": "25%"
+    },
+    "attribute": {
+      "Explosion DMG": "139%",
+      "Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "35",
+    "name": "Screamshot",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/screamshot_v1.PNG",
+    "type": "Shotgun",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Skill Duration (+18% / 21.6% / 25.2% / 28.8% / 32.4% / 36%).",
+    "stats": {
+      "Spike ATK": "18 | 225.94",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "180%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Mag Capacity": "6",
+      "Max Ammo": "60",
+      "Ammo Conversion Rate": "50%"
+    },
+    "attribute": {
+      "Explosion DMG": "30%",
+      "Number of Projectiles": "5"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        18,
+        21.6,
+        25.2,
+        28.8,
+        32.4,
+        36
+      ]
+    }
+  },
+  {
+    "id": "36",
+    "name": "Silent Sower",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/silent_sower_v1.PNG",
+    "type": "Shotgun",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "CRIT Chance (+50.0% / 60% / 70% / 80% / 90% / 100%). The projectiles it shoots attaches to the target and explodes after 3s. Projectiles attached to one another in the same position will stack up, increasing the damage and the range of the incoming explosion. When 1 / 2 / 3 projectiles are stacked, it deals (217.0% / 227.75% / 238.5% / 249.25% / 260%) / (383.0% / 398.4% / 413.8% / 429.2% / 444.6% / 460%) / (592.0% / 615.6% / 639.2% / 662.8% / 686.4% / 710%) of the original damage.",
+    "stats": {
+      "Smash ATK": "16 | 200.84",
+      "CRIT Chance": "16%",
+      "CRIT Damage": "180%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "12",
+      "Max Ammo": "90",
+      "Ammo Conversion Rate": "25%"
+    },
+    "attribute": {
+      "Explosion DMG": "100%",
+      "Explosion DMG - Phase 2": "217%",
+      "Explosion DMG - Phase 3": "383%",
+      "Explosion DMG - Phase 4": "592%",
+      "Explosion Radius": "2m",
+      "2-Hit Explosion Radius": "3m",
+      "3-Hit Explosion Radius": "4m",
+      "4-Hit Explosion Radius": "5m"
+    }
+  },
+  {
+    "id": "37",
+    "name": "Blast Artistry",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/blast_artistry_v1.PNG",
+    "type": "Shotgun",
+    "element": "Umbro",
+    "attackType": "Smash",
+    "skill": "Character ATK (+50.0% / 60% / 70% / 80% / 90% / 100%). Charging fires a special bullet that travels slowly and explodes after a short delay, dealing AoE damage. Tap-firing bullets can trigger its early detonation on contact. When an Umbro character casts their Ultimate, grants (+20.0% / 24% / 28% / 32% / 36% / 40%) Skill Efficiency for 15.0s",
+    "stats": {
+      "Smash ATK": "15 | 188.28",
+      "CRIT Chance": "15%",
+      "CRIT Damage": "165%",
+      "ATK Speed": "1",
+      "Trigger Probability": "10%",
+      "Multishot": "1",
+      "Mag Capacity": "12",
+      "Max Ammo": "60",
+      "Ammo Conversion Rate": "30%"
+    },
+    "attribute": {
+      "Projectile DMG": "33%",
+      "Explosion DMG": "200%",
+      "Projectile Calibre": "2.8m"
+    },
+    "baseBuff": {
+      "atk": [
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    }
+  },
+  {
+    "id": "38",
+    "name": "Blade Amberglow",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/blade_amberglow_v1.PNG",
+    "type": "Sword",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Character ATK (+60% / 72% / 84% / 96% / 108% / 120%).",
+    "stats": {
+      "Smash ATK": "19 | 238.49",
+      "CRIT Chance": "25%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "atk": [
+        60,
+        72,
+        84,
+        96,
+        108,
+        120
+      ]
+    }
+  },
+  {
+    "id": "39",
+    "name": "Wandering Rose",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/wandering_rose_v1.PNG",
+    "type": "Sword",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Speed (+25.0% / 30% / 35% / 40% / 45% / 50%). When a performing a Charged Attack with this weapon, there is a (28.0% / 33.6% / 39.2% / 44.8% / 50.4% / 56%) chance to reduce Resonance Support CD by 3.0s.",
+    "stats": {
+      "Spike ATK": "20 | 251.04",
+      "CRIT Chance": "23%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "28%"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "40",
+    "name": "Ingenious Tactics",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/ingenious_tactics_v1.PNG",
+    "type": "Sword",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "DEF (+50% / 60% / 70% / 80% / 90% / 100%). When dealing damage with this weapon triggers Bonus Effect, theres' a (25% / 30% / 35% / 40% / 45% / 50%) chance to decrease the target's Shield by 350% of the user's DEF.",
+    "stats": {
+      "Slash ATK": "18 | 225.94",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "def": [
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    }
+  },
+  {
+    "id": "41",
+    "name": "Shackle of Lonewolf",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/shackle_of_lonewolf_v1.PNG",
+    "type": "Sword",
+    "element": "Hydro",
+    "attackType": "Spike",
+    "skill": "Trigger Probability (+75.0% / 90% / 105% / 120% / 135% / 150%). When a Hydro character triggers a bonus effect with this weapon, other allies gain (+33.0% / 39.6% / 46.2% / 52.8% / 59.4% / 66%) ATK for 6.0s.",
+    "stats": {
+      "Spike ATK": "20 | 251.04",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "42",
+    "name": "Remanent Reminiscence",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/remanent_reminiscence_v1.PNG",
+    "type": "Sword",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Range (+1.0 / 1.2 / 1.4 / 1.6 / 2.0). Landing a CRIT with this weapon has a (33.0% / 39.6% / 46.2% / 52.8% / 59.4% / 66%) chance to restore 3.0 Sanity. Can trigger once every 0.5s.",
+    "stats": {
+      "Spike ATK": "17 | 213.39",
+      "CRIT Chance": "30%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "12%",
+      "ATK Range": "0"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "43",
+    "name": "Undying Oneiros",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/undying_oneiros_v1.PNG",
+    "type": "Whipsword",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Max HP (+50.0% / 60% / 70% / 80% / 90% / 100%). When this weapon triggers a bonus effect on hit, grants (+8.6% / 10.32% / 12.04% / 13.76% / 15.48% / 17.2%) Max HP for 15.0s (up to 10.0 stacks).",
+    "stats": {
+      "Spike ATK": "21 | 263.6",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "225%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "60%",
+      "4-Hit DMG": "50% x 2",
+      "Charged Attack DMG": "16.1%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "hp": [
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    }
+  },
+  {
+    "id": "44",
+    "name": "Viridis Reefs",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/viridis_reefs_v1.PNG",
+    "type": "Whipsword",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Trigger Probability (+75.0% / 90% / 105% / 120% / 135% / 150%). Charged Attacks with this weapon grants (+44.0% / 52.8% / 61.6% / 70.4% / 79.2% / 88%) ATK Speed for 6.0s. Effect is removed when switching weapons.",
+    "stats": {
+      "Spike ATK": "17 | 213.39",
+      "CRIT Chance": "26%",
+      "CRIT Damage": "235%",
+      "ATK Speed": "1",
+      "Trigger Probability": "12%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "60%",
+      "4-Hit DMG": "50% x 2",
+      "Charged Attack DMG": "16.1%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "45",
+    "name": "Tetherlash",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/tetherlash_v1.PNG",
+    "type": "Whipsword",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Skill Duration (+18% / 21.6% / 25.2% / 28.8% / 32.4% / 36%).",
+    "stats": {
+      "Smash ATK": "19 | 238.49",
+      "CRIT Chance": "18%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "60%",
+      "4-Hit DMG": "50% x 2",
+      "Charged Attack DMG": "16.1%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        18,
+        21.6,
+        25.2,
+        28.8,
+        32.4,
+        36
+      ]
+    }
+  },
+  {
+    "id": "46",
+    "name": "Ephemeral Lumina",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/ephemeral_lumina_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Lumino",
+    "attackType": "Slash",
+    "skill": "Skill Duration (+15% / 18% / 21% / 24% / 27% / 30%). Projectiles that hit the environment or travel a certain distance return to the user's position and increase the Ammo count by 1. When a Lumino character triggers Bonus Effect, grants 1 stack that increases ATK by (17.5% / 21% / 24.5% / 28% / 31.5% / 35%) for 24s, up to 9 stacks. Using an Ultimate Skill refreshes the duration of all stacks to 24s.",
+    "stats": {
+      "Slash ATK": "18",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%",
+      "Multishot": "1",
+      "Max Ammo": "15",
+      "Ammo Conversion Rate": "10%"
+    },
+    "attribute": {
+      "Projectile Damage": "6%",
+      "Firing Interval": "0.1 shots/s"
+    },
+    "baseBuff": {
+      "skillDuration": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "id": "47",
+    "name": "Cloudveil Unfurl",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/cloudveil_unfurl.png",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Mag Capacity (+30% / 36% / 42% / 48% / 54% / 60%). On a CRIT with this weapon, grants 1 stack of (+5% / 6% / 7% / 8% / 9% / 10%) ATK Speed for 6s, stacking up to 10 times. The effect is removed when switching weapons.",
+    "stats": {
+      "Spike ATK": "16",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "60",
+      "Max Ammo": "150",
+      "Ammo Conversion Rate": "10%"
+    },
+    "attribute": {
+      "Projectile Damage": "4.1%",
+      "Firing Interval": "0.1 shots/s"
+    }
+  },
+  {
+    "id": "48",
+    "name": "Halcyon Gracefall",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/halcyon_gracefall_v1.PNG",
+    "type": "Whipsword",
+    "element": "Hydro",
+    "attackType": "Slash",
+    "skill": "Skill Intensity (+20% / 24% / 28% / 32% / 36% / 40%). When a Hydro character deals CRIT Damage with this weapon, increases Skill Damage for teammates within range by (17% / 20.4% / 23.8% / 27.2% / 30.6% / 34%) for 6s.",
+    "stats": {
+      "Slash ATK": "18",
+      "CRIT Chance": "30%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "60% x 2",
+      "4-Hit DMG": "50% x 2",
+      "Charged Attack DMG": "16.1%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "skillIntensity": [
+        20,
+        24,
+        28,
+        32,
+        36,
+        40
+      ]
+    }
+  },
+  {
+    "id": "49",
+    "name": "Dove of Tomorrow",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/dove_of_tomorrow.png",
+    "type": "Polearm",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "CRIT Chance (+50% / 60% / 70% / 80% / 90% / 100%). When dealing damage using normal attack with this weapon, there is (1.7% / 2.04% / 2.38% / 2.72% / 3.06% / 3.40%) chance to reload the user's ranged weapon magazine.",
+    "stats": {
+      "Smash ATK": "21",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "185%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25%x3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40%",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    }
+  },
+  {
+    "id": "50",
+    "name": "Eternal Farewell",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/eternal_farewell_v1.PNG",
+    "type": "Greatsword",
+    "element": "Electro",
+    "attackType": "Slash",
+    "skill": "Morale (+15% / 18% / 21% / 24% / 27% / 30%). When an Electro character uses their Ultimate Skill, grants (+25% / 30% / 35% / 40% / 45% / 50% ) Skill Intensity for 12s (up to 3 stacks).",
+    "stats": {
+      "Slash ATK": "22",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "45%",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "120%",
+      "Charged Attack DMG": "55%",
+      "Charged Attack Finisher DMG": "50%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "73%"
+    },
+    "baseBuff": {
+      "morale": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "id": "51",
+    "name": "Skyfall Duality",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/skyfall_duality.png",
+    "type": "Dual Blades",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "ATK Range (+1 / 1.2 / 1.4 / 1.6 / 1.8 / 2). Charged Attacks with this weapon have (6% / 7.2% / 8.4% / 9.6% / 10.8% / 12%) chance not to consume Combo Points.",
+    "stats": {
+      "Spike ATK": "20",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "33%",
+      "ATK Range": "1"
+    },
+    "attribute": {
+      "1-Hit DMG": "20%x2",
+      "2-Hit DMG": "25%x2",
+      "3-Hit DMG": "38%",
+      "4-Hit DMG": "43%x3",
+      "Charged Attack DMG": "20%x6",
+      "Charged Attack Finisher DMG": "55%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "36%x2"
+    }
+  },
+  {
+    "id": "52",
+    "name": "Venial Sinscales",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/venial_sinscales_v1.PNG",
+    "type": "Polearm",
+    "element": "Electro",
+    "attackType": "Smash",
+    "skill": "Skill Intensity (+20% / 24% / 28% / 32% / 36% / 40%). When an Electro Character deals damage using a Plunging Attack with this weapon, grants self and Electro allies (+5% / 6% / 7% / 8% / 9% / 10%) Skill DMG for 10s (up to 5 stacks).",
+    "stats": {
+      "Smash ATK": "20",
+      "CRIT Chance": "30%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25%x3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    },
+    "baseBuff": {
+      "skillIntensity": [
+        20,
+        24,
+        28,
+        32,
+        36,
+        40
+      ]
+    }
+  },
+  {
+    "id": "53",
+    "name": "Trigon Muse",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/trigon_muse.png",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Spike",
+    "skill": "Mag Capacity (+30% / 36% / 42% / 48% / 54% / 60%). After firing 10 rounds, the weapon consumes all remaining rounds in the magazine to fire a special round that deals AOE DMG. For each round consumed, this damage increases by (1.7% / 2.04% / 2.38% / 2.72% / 3.06% / 3.4%), up to (51% / 61.2% / 71.4% / 81.6% / 91.8% / 102%). Defeating an enemy with this weapon has a (25% / 30% / 35% / 40% / 45% / 50%) chance to restore 1 round.",
+    "stats": {
+      "Spike ATK": "18",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "215%",
+      "ATK Speed": "1",
+      "Trigger Probability": "28%",
+      "Multishot": "1",
+      "Mag Capacity": "30",
+      "Max Ammo": "120"
+    },
+    "attribute": {
+      "Beam DMG": "5%",
+      "Explosion DMG": "291.5%"
+    }
+  },
+  {
+    "id": "54",
+    "name": "Fledgeling's Gleam",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/fledglings_gleam.png",
+    "type": "Shotgun",
+    "element": "Lumino",
+    "attackType": "Smash",
+    "skill": "Max Ammo (+90% / 108% / 126% / 144% / 162% / 180%). When a Lumino character uses their Combat Skill or Ultimate Skill and consumes Sanity, grants (+0.25% / 0.3% / 0.4% / 0.45% / 0.5%) Skill Intensity per Sanity spent for 24s, up to (+75% / 90% / 105% / 120% / 135% / 150%).",
+    "stats": {
+      "Smash ATK": "20 | 251.04",
+      "CRIT Chance": "28%",
+      "CRIT Damage": "240%",
+      "ATK Speed": "1",
+      "Trigger Probability": "20%",
+      "Multishot": "1",
+      "Mag Capacity": "9",
+      "Max Ammo": "90",
+      "Ammo Conversion Rate": "50%"
+    },
+    "attribute": {
+      "Projectile DMG": "21%"
+    }
+  },
+  {
+    "id": "55",
+    "name": "Aureate Drift",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/aureate_drift.png",
+    "type": "Greatsword",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Trigger Probability (+75% / 90% / 105% / 120% / 135% / 150%). When damage dealt with this weapon triggers a bonus effect, there is a (+50% / 60% / 70% / 80% / 90% / 100%) chance to restore 5 rounds of ammo.",
+    "stats": {
+      "Smash ATK": "21 | 263.86",
+      "CRIT Chance": "18%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "40%",
+      "2-Hit DMG": "45%",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "120%",
+      "Charged Attack DMG": "55%",
+      "Charged Attack Finisher DMG": "50%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "73%"
+    }
+  },
+  {
+    "id": "56",
+    "name": "Dregs of Glimmer",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/dregs_of_glimmer_v1.PNG",
+    "type": "Assault Rifle",
+    "element": "Pyro",
+    "attackType": "Spike",
+    "skill": "Multishot (+37.5% / 45% / 52.5% / 60% / 67.5% / 75%). When a Pyro character deals Skill DMG, grants 1 stack of (+2.5% / 3% / 3.5% / 4% / 4.5% / 5%) Skill DMG for 10s, up to 30 stacks.",
+    "stats": {
+      "Spike ATK": "20 | 251.04",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "25%",
+      "Multishot": "1",
+      "Mag Capacity": "60",
+      "Max Ammo": "150"
+    },
+    "attribute": {
+      "Projectile DMG": "4.1%",
+      "Firing Interval": "0.1 shots/s"
+    }
+  },
+  {
+    "id": "57",
+    "name": "Jagged Growl",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/jagged_growl_v1.PNG",
+    "type": "Shotgun",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "CRIT Damage (+62.5% / 75% / 87.5% / 100% / 112.5% / 125%). When dealing damage with this weapon, increases Damage Dealt by (35% / 42% / 49% / 56% / 63% / 70%) if the current weapon is a melee weapon.",
+    "stats": {
+      "Smash ATK": "21 | 263.6",
+      "CRIT Chance": "30%",
+      "CRIT Damage": "250%",
+      "ATK Speed": "1",
+      "Trigger Probability": "24%",
+      "Multishot": "1",
+      "Mag Capacity": "1",
+      "Max Ammo": "10"
+    },
+    "attribute": {
+      "Shooting DMG": "5%",
+      "Projectile DMG": "17%"
+    }
+  },
+  {
+    "id": "58",
+    "name": "Firearm Feast",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/firearm_feast.PNG",
+    "type": "Grenade Launcher",
+    "element": "Pyro",
+    "attackType": "Slash",
+    "skill": "Multishot +(37.5% / 45% / 52.5% / 60% / 67.5% / 75%). When a Pyro character performs a Dodge, grants 1 stack of +(8% / 9.6% / 11.2% / 12.8% / 14.4% / 16%) Skill DMG and +(8% / 9.6% / 11.2% / 12.8% / 14.4% / 16%) Multishot for 16s, up to 4 stacks.",
+    "stats": {
+      "Slash ATK": "18 | 225.94",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "240%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%",
+      "Multishot": "1",
+      "Mag Capacity": "15",
+      "Max Ammo": "90"
+    },
+    "attribute": {
+      "Explosion DMG": "15.5%",
+      "Explosion DMG - Phase 2": "15.5%",
+      "Explosion DMG - Phase 3": "15.5%",
+      "Explosion Radius": "3m",
+      "2-Hit Explosion Radius": "3m",
+      "3-Hit Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "59",
+    "name": "Chainbreak Pinion",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/chainbreak_pinion.png",
+    "type": "Sword",
+    "element": "Umbro",
+    "attackType": "Spike",
+    "skill": "Morale +(15% / 18% / 21% / 24% / 27% / 30%). When an Umbro character deals damage, Damage Dealt increases by (0.2% / 0.24% / 0.28% / 0.32% / 0.36% / 0.4%) for each Combo Point. After Combo Points are consumed, Morale increases by [(0.25% / 0.3% / 0.35% / 0.4% / 0.45% / 0.5%) x Combo Points consumed] for 8s.",
+    "stats": {
+      "Spike ATK": "25 | 313.8",
+      "CRIT Chance": "24%",
+      "CRIT Damage": "240%",
+      "ATK Speed": "1",
+      "Trigger Probability": "15%"
+    },
+    "attribute": {
+      "1-Hit DMG": "45%",
+      "2-Hit DMG": "50%",
+      "3-Hit DMG": "40% x 2",
+      "4-Hit DMG": "82%",
+      "Charged Attack DMG": "113%",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    },
+    "baseBuff": {
+      "morale": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ]
+    }
+  },
+  {
+    "id": "60",
+    "name": "Sanguis Sanctus - Katana",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/sanguin_sanctus_katana.png",
+    "type": "Katana",
+    "element": "Neutral",
+    "attackType": "Slash",
+    "skill": "ATK Range +(1 / 1.2 / 1.4 / 1.6 / 1.8 / 2) . When Combo Level increases, grants 1 stack of +(11% / 13.2 / 15.4 / 17.6 / 19.8 / 22%) Normal ATK DMG for 10s, up to 4 stacks. This effect is removed when switching weapons.",
+    "stats": {
+      "Smash ATK": "20 | 251.04",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "26%"
+    },
+    "attribute": {
+      "1-Hit DMG": "20% x 3",
+      "2-Hit DMG": "30% x 4",
+      "3-Hit DMG": "40% x 2 + 45%",
+      "4-Hit DMG": "85%",
+      "Charged Attack DMG": "10% x 9",
+      "Plunge DMG": "51%",
+      "Sliding Attack DMG": "51%"
+    }
+  },
+  {
+    "id": "61",
+    "name": "Gloom Oath",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/gloom_oath.png",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Smash",
+    "skill": "Reload Speed +(30% / 36% / 42% / 48% / 54% / 60%). After reloading, ATK Speed increases by (50% / 60% / 70% / 80% / 90% / 100%) for 6s. This effect is removed when switching weapons.",
+    "stats": {
+      "Smash ATK": "18 | 225.94",
+      "CRIT Chance": "21%",
+      "CRIT Damage": "200%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%",
+      "Multishot": "1",
+      "Mag Capacity": "15"
+    },
+    "attribute": {
+      "Projectile DMG": "29%",
+      "Firing Interval": "0.15 shots/s",
+      "Explosion Radius": "3m"
+    }
+  },
+  {
+    "id": "62",
+    "name": "Thorned Requiem",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/thorned_requiem.png",
+    "type": "Assault Rifle",
+    "element": "Neutral",
+    "attackType": "Calamity",
+    "skill": "[Thorns - First Bloom]: Dealing damage with this weapon grants 2 Calamity. Calamity is capped at 100. When Calamity reaches its cap, all Calamity is consumed to trigger [Oblivion] once, dealing 1000% Calamity damage to enemies within 3m and pulling hit enemies towards its center. This counts as Ranged Weapon DMG.",
+    "stats": {
+      "Calamity ATK": "25.2 | 263.6",
+      "CRIT Chance": "22%",
+      "CRIT Damage": "220%",
+      "ATK Speed": "1",
+      "Trigger Probability": "24%",
+      "Multishot": "1",
+      "Mag Capacity": "30",
+      "Max Ammo": "120",
+      "Ammo Conversion Rate": "120%"
+    },
+    "attribute": {
+      "Projectile DMG": "26%",
+      "Firing Interval": "0.18 shots/s"
+    },
+    "smelt": {
+      "1": [
+        "[Thorns - Full Bloom]: Gain 80 Calamity at the start of battle. Each time Combo Points are consumed, gain [60% x Combo Points consumed] Calamity.",
+        "[Thorns  - Floral Rivalry]: Dealing damage with a melee weapon grants 2 Calamity. If this instance of damage is critical, grants an additional 4 Calamity."
+      ],
+      "2": [
+        "[Requiem - Strength]: Skill Intensity +45%",
+        "[Requiem - Penetration]: PEN Stats +15%."
+      ],
+      "3": [
+        "[Thorn - Decay]: For every 120 Combo Points consumed, the damage multiplier of the next [Oblivion] increases by 600%, and melee weapon damage increases by 30% for 3s.",
+        "[Thorn - Withering]:  Increases [Oblivion] radius by 6m and its damage is guaranteed to trigger bonus effects."
+      ],
+      "4": [
+        "[Requiem - Huntdown]: The character's own element deals +35% additional damage.",
+        "[Requiem - Morale]: Morale +35%."
+      ],
+      "5": [
+        "[Thorn - Wilt]: Melee Weapon Charged Attacks deal 300% more damage. When Combo Points are at max, the excess is stored as the same stacks of [Doom Sigils], up to 360. Each time [Oblivion] is triggered, gain 20 stacks of [Doom Sigil]. When using a Charged Attack, if COmbo Points are below max, consume an equal number of [Doom Sigils] to raise Combo Points to the max."
+      ]
+    }
+  },
+  {
+    "id": "63",
+    "name": "Perpetual Strife",
+    "portrait": "https://files.boarhat.gg/assets/duetnightabyss/weapon/perpetual_strife.png",
+    "type": "Polearm",
+    "element": "Neutral",
+    "attackType": "Calamity",
+    "skill": "[Endless Expedition]: Dealing damage with this weapon grants 1 Calamity. When a Plunging Attack or Sliding Attack deals damage, gain 1 additional Calamity. Calamity is capped at 100. When Calamity reaches its cap, all Calamity is consumed to trigger [Parting Requiem] once dealing 1000% Calamity Damage to enemies within 10m. This counts as Melee Weapon Damage.",
+    "stats": {
+      "Calamity ATK": "22 | 276.15",
+      "CRIT Chance": "20%",
+      "CRIT Damage": "210%",
+      "ATK Speed": "1",
+      "Trigger Probability": "30%"
+    },
+    "attribute": {
+      "1-Hit DMG": "35%",
+      "2-Hit DMG": "25% x 3",
+      "3-Hit DMG": "50%",
+      "4-Hit DMG": "40% x 2",
+      "5-Hit DMG": "75%",
+      "Charged Attack DMG": "10%",
+      "Plunge DMG": "47%",
+      "Sliding Attack DMG": "40%"
+    },
+    "smelt": {
+      "1": [
+        "[Endless Triumph]: When summoning a summoned creature, you gain 80 points of Calamity.",
+        "[Endless Rout]: When a summoned creature deals damage, the user gains 1 point of Calamity."
+      ],
+      "2": [
+        "[Endless - Strength]: Skill Intensity +45%",
+        "[Endless Attack]: ATK +90%."
+      ],
+      "3": [
+        "[Endless Stalemate]:  When summoning a creature, gain 1 stack of [Spirit Descent], lasting 10 seconds, stacking up to 20 times. The remaining time is refreshed upon stacking. Each stack of [Spirit Descent] increases the attack speed of summoned creatures by 2.0%.",
+        "[Endless Exhaustion]:   For every 100 points of Calamity consumed, gain 1 stack of [Spirit Descent], lasting 10 seconds, stacking up to 20 times. The remaining time is refreshed when a stack is reached. Each stack of [Spirit Descent] increases the attack speed of summoned creatures by 2.0%. At the start of the battle, you gain 20 stacks of [Spirit Descent], which last for 20 seconds."
+      ],
+      "4": [
+        "[Endless Range:]: Skill Range +90%",
+        "[Unending Spirit]: Sanity +35%"
+      ],
+      "5": [
+        "The maximum number of stacks for [Summoning Spirit] has been increased to 30. Each stack of [Summoning Spirit] increases the attribute inheritance ratio of summoned creatures by 0.25%. When equipped with 30 stacks of [Spirit Descent], you will gain an additional [Awakening]: weapon trigger probability increased by 100%, [Farewell Elegy] damage multiplier increased by 700%, and when a summoned creature dies, [Farewell Elegy] will trigger an additional time without consuming Calamity Points."
+      ]
+    }
+  }
+]
