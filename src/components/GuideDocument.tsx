@@ -17,8 +17,6 @@ function DisplayBlock({ block }: { block: GuideDisplayBlock }) {
       return <h4 className="guide-doc__subsection">{block.text}</h4>;
     case "item":
       return <li className="guide-doc__item">{block.text}</li>;
-    case "quote":
-      return <blockquote className="guide-doc__quote">{block.text}</blockquote>;
     case "bold":
       return <p className="guide-doc__bold">{block.text}</p>;
     default:
@@ -65,6 +63,25 @@ function renderSourceBlocks(blocks: GuideDisplayBlock[]): ReactNode[] {
             <DisplayBlock key={k} block={item} />
           ))}
         </ul>
+      );
+      i = j - 1;
+      continue;
+    }
+    if (block.type === "quote") {
+      const paragraphs: GuideDisplayBlock[] = [];
+      let j = i;
+      while (j < blocks.length && blocks[j].type === "quote") {
+        paragraphs.push(blocks[j]);
+        j++;
+      }
+      nodes.push(
+        <div key={`panel-${i}`} className="guide-doc__panel">
+          {paragraphs.map((para, k) => (
+            <p key={k} className="guide-doc__panel-p">
+              {para.text}
+            </p>
+          ))}
+        </div>
       );
       i = j - 1;
       continue;

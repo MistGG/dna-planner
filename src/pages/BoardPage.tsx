@@ -9,7 +9,13 @@ import {
   flatBoardSpaces,
   milestonePercents,
 } from "../utils/boardGame";
+import {
+  entryCollectedCount,
+  entryIsComplete,
+  formatTarget,
+} from "../types/collector";
 import { boardWedgeRarityClass } from "../utils/wedges";
+import type { BoardSpace } from "../utils/boardGame";
 
 function typeGlyph(type: string, isParent: boolean): string {
   if (type === "character") return "✦";
@@ -17,8 +23,112 @@ function typeGlyph(type: string, isParent: boolean): string {
   return isParent ? "◆" : "◇";
 }
 
+function BoardSpaceCard({
+  space,
+  isFrontier,
+  isDone,
+  isFuture,
+  pawnPortrait,
+  onToggle,
+  onToggleCopy,
+}: {
+  space: BoardSpace;
+  isFrontier: boolean;
+  isDone: boolean;
+  isFuture: boolean;
+  pawnPortrait: string | null;
+  onToggle: () => void;
+  onToggleCopy: (tickIndex: number) => void;
+}) {
+  const { entry } = space;
+  const target = entry.target;
+  const collectedCount = entryCollectedCount(entry);
+  const multiCopy = target > 1;
+
+  const cardClass = [
+    "board-space",
+    `board-space--${entry.type}`,
+    entry.type === "wedge" ? boardWedgeRarityClass(space.wedgeRarity) : "",
+    space.isParent ? "board-space--lead" : "",
+    isDone ? "board-space--done" : "",
+    isFrontier ? "board-space--frontier" : "",
+    isFuture ? "board-space--future" : "",
+    multiCopy ? "board-space--multi" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const cardBody = (
+    <>
+      {isFrontier && pawnPortrait && (
+        <img src={pawnPortrait} alt="" className="board-pawn" />
+      )}
+      <span className="board-space__ring" aria-hidden="true" />
+      <img src={space.portrait} alt="" className="board-space__portrait" />
+      <span className="board-space__glyph">
+        {typeGlyph(entry.type, space.isParent)}
+      </span>
+      {isDone && <span className="board-space__check">✓</span>}
+      <span className="board-space__name">{space.name}</span>
+    </>
+  );
+
+  return (
+    <div className="board-space-stack">
+      {multiCopy ? (
+        <div
+          className={cardClass}
+          style={{ "--space-accent": space.accent } as CSSProperties}
+          title={`${space.name} (${formatTarget(entry)})`}
+        >
+          {cardBody}
+        </div>
+      ) : (
+        <button
+          type="button"
+          className={cardClass}
+          style={{ "--space-accent": space.accent } as CSSProperties}
+          onClick={onToggle}
+          title={`${isDone ? "Collected" : "Mark collected"}: ${space.name}`}
+        >
+          {cardBody}
+        </button>
+      )}
+
+      {multiCopy && (
+        <div
+          className="board-space__ticks"
+          role="group"
+          aria-label={`${space.name}: ${collectedCount} of ${target} ${entry.type === "character" ? "intron steps" : "copies"}`}
+        >
+          {Array.from({ length: target }, (_, ti) => {
+            const filled = ti < collectedCount;
+            const isNext = ti === collectedCount && isFrontier;
+            return (
+              <button
+                key={ti}
+                type="button"
+                className={`board-space__tick${filled ? " board-space__tick--on" : ""}${isNext ? " board-space__tick--next" : ""}`}
+                onClick={() => onToggleCopy(ti)}
+                aria-pressed={filled}
+                aria-label={
+                  entry.type === "character"
+                    ? `Intron I${ti + 1}${filled ? " obtained" : ""}`
+                    : `Copy ${ti + 1} of ${target}${filled ? " collected" : ""}`
+                }
+              >
+                {filled ? "✓" : null}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function BoardPage() {
-  const { groups, stats, toggle, watermark } = useCollectorContext();
+  const { groups, stats, toggle, toggleCopy, watermark } = useCollectorContext();
 
   const regions = useMemo(() => buildBoardRegions(groups), [groups]);
   const spaces = useMemo(() => flatBoardSpaces(regions), [regions]);
@@ -125,7 +235,7 @@ export function BoardPage() {
                     {region.spaces.map((space, si) => {
                       const isFrontier =
                         !complete && space.globalIndex === frontier;
-                      const isDone = space.entry.collected;
+                      const isDone = entryIsComplete(space.entry);
                       const isFuture = space.globalIndex > frontier && !isDone;
 
                       return (
@@ -136,28 +246,15 @@ export function BoardPage() {
                               aria-hidden="true"
                             />
                           )}
-                          <button
-                            type="button"
-                            className={`board-space board-space--${space.entry.type}${space.entry.type === "wedge" ? ` ${boardWedgeRarityClass(space.wedgeRarity)}` : ""}${space.isParent ? " board-space--lead" : ""}${isDone ? " board-space--done" : ""}${isFrontier ? " board-space--frontier" : ""}${isFuture ? " board-space--future" : ""}`}
-                            style={{ "--space-accent": space.accent } as CSSProperties}
-                            onClick={() => toggle(space.entry.id)}
-                            title={`${isDone ? "Collected" : "Mark collected"}: ${space.name}`}
-                          >
-                            {isFrontier && pawnPortrait && (
-                              <img src={pawnPortrait} alt="" className="board-pawn" />
-                            )}
-                            <span className="board-space__ring" aria-hidden="true" />
-                            <img
-                              src={space.portrait}
-                              alt=""
-                              className="board-space__portrait"
-                            />
-                            <span className="board-space__glyph">
-                              {typeGlyph(space.entry.type, space.isParent)}
-                            </span>
-                            {isDone && <span className="board-space__check">✓</span>}
-                            <span className="board-space__name">{space.name}</span>
-                          </button>
+                          <BoardSpaceCard
+                            space={space}
+                            isFrontier={isFrontier}
+                            isDone={isDone}
+                            isFuture={isFuture}
+                            pawnPortrait={pawnPortrait}
+                            onToggle={() => toggle(space.entry.id)}
+                            onToggleCopy={(ti) => toggleCopy(space.entry.id, ti)}
+                          />
                         </div>
                       );
                     })}
@@ -181,8 +278,8 @@ export function BoardPage() {
           </div>
 
           <p className="board-foot">
-            Tap a space to mark it collected. Reorder your list on{" "}
-            <Link to="/">Collection</Link> to reshape the expedition.
+            Tap ticks under an item to track each copy — finish all ticks to conquer that space.
+            Reorder your list on <Link to="/">Collection</Link> to reshape the expedition.
           </p>
         </>
       )}

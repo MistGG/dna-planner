@@ -75,6 +75,28 @@ export function parseGuideDisplayBlocks(text: string): GuideDisplayBlock[] {
       continue;
     }
 
+    const markdownTitle = line.match(/^#\s+(.+)$/);
+    if (markdownTitle) {
+      blocks.push({ type: "title", text: markdownTitle[1].trim() });
+      continue;
+    }
+
+    const markdownSection = line.match(/^#{2,3}\s+(.+)$/);
+    if (markdownSection) {
+      const content = markdownSection[1].trim();
+      const header = normalizeHeader(content);
+      if (/^weapons?$/.test(header)) {
+        blocks.push({ type: "section", text: "Weapons" });
+      } else if (/^wedges?$/.test(header)) {
+        blocks.push({ type: "section", text: "Wedges" });
+      } else if (/^supports?$/.test(header)) {
+        blocks.push({ type: "section", text: "Supports" });
+      } else {
+        blocks.push({ type: "section", text: content });
+      }
+      continue;
+    }
+
     if (line.startsWith(">")) {
       blocks.push({ type: "quote", text: line.replace(/^>\s*/, "") });
       continue;

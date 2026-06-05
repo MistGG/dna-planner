@@ -9,10 +9,36 @@ export interface CollectionEntry {
   itemId: string;
   /** Characters: intron level 1–6. Weapons/wedges: copy count. */
   target: number;
+  /** Copies / intron steps obtained (0 … target). */
+  collectedCount?: number;
   collected: boolean;
   addedAt: number;
   /** Wedges only — id of parent character/weapon entry. */
   parentId?: string;
+}
+
+export function entryCollectedCount(entry: CollectionEntry): number {
+  const target = normalizeTarget(entry.type, entry.target);
+  if (typeof entry.collectedCount === "number") {
+    return Math.min(target, Math.max(0, Math.round(entry.collectedCount)));
+  }
+  return entry.collected ? target : 0;
+}
+
+export function entryIsComplete(entry: CollectionEntry): boolean {
+  return entryCollectedCount(entry) >= normalizeTarget(entry.type, entry.target);
+}
+
+/** Sync target, collectedCount, and collected after edits. */
+export function normalizeEntry(entry: CollectionEntry): CollectionEntry {
+  const target = normalizeTarget(entry.type, entry.target);
+  const collectedCount = entryCollectedCount(entry);
+  return {
+    ...entry,
+    target,
+    collectedCount,
+    collected: collectedCount >= target,
+  };
 }
 
 export function collectionKey(

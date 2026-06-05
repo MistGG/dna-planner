@@ -2,6 +2,9 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   collectionKey,
   defaultTarget,
+  entryIsComplete,
+  entryCollectedCount,
+  normalizeEntry,
   normalizeTarget,
   type CollectionEntry,
   type CollectionType,
@@ -21,10 +24,9 @@ function loadQueue(): CollectionEntry[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
-      const parsed = (JSON.parse(raw) as CollectionEntry[]).map((entry) => ({
-        ...entry,
-        target: normalizeTarget(entry.type, entry.target),
-      }));
+      const parsed = (JSON.parse(raw) as CollectionEntry[]).map((entry) =>
+        normalizeEntry(entry)
+      );
       return sanitizeQueue(parsed);
     }
   } catch {
@@ -51,7 +53,7 @@ export function useCollector() {
           e.type === type &&
           e.itemId === itemId &&
           e.parentId === parentId &&
-          e.collected
+          entryIsComplete(e)
       ),
     [queue]
   );
@@ -117,7 +119,7 @@ export function useCollector() {
   const setTarget = useCallback((id: string, target: number) => {
     setQueue((q) =>
       q.map((e) =>
-        e.id === id ? { ...e, target: normalizeTarget(e.type, target) } : e
+        e.id === id ? normalizeEntry({ ...e, target: normalizeTarget(e.type, target) }) : e
       )
     );
   }, []);
@@ -128,7 +130,36 @@ export function useCollector() {
 
   const toggle = useCallback((id: string) => {
     setQueue((q) =>
-      q.map((e) => (e.id === id ? { ...e, collected: !e.collected } : e))
+      q.map((e) => {
+        if (e.id !== id) return e;
+        const normalized = normalizeEntry(e);
+        const target = normalized.target;
+        const done = entryIsComplete(normalized);
+        return normalizeEntry({
+          ...normalized,
+          collectedCount: done ? 0 : target,
+        });
+      })
+    );
+  }, []);
+
+  const toggleCopy = useCallback((id: string, tickIndex: number) => {
+    setQueue((q) =>
+      q.map((e) => {
+        if (e.id !== id) return e;
+        const normalized = normalizeEntry(e);
+        const target = normalized.target;
+        const count = entryCollectedCount(normalized);
+        let next = count;
+        if (tickIndex < count) {
+          next = tickIndex;
+        } else if (tickIndex === count && count < target) {
+          next = count + 1;
+        } else {
+          return normalized;
+        }
+        return normalizeEntry({ ...normalized, collectedCount: next });
+      })
     );
   }, []);
 
@@ -151,7 +182,7 @@ export function useCollector() {
         if (existing) {
           return q.map((e) =>
             e.id === id
-              ? { ...e, target: Math.max(e.target, normalized) }
+              ? normalizeEntry({ ...e, target: Math.max(e.target, normalized) })
               : e
           );
         }
@@ -190,8 +221,11 @@ export function useCollector() {
     []
   );
 
-  const collected = queue.filter((e) => e.collected).length;
-  const total = queue.length;
+  const total = queue.reduce(
+    (sum, e) => sum + normalizeTarget(e.type, e.target),
+    0
+  );
+  const collected = queue.reduce((sum, e) => sum + entryCollectedCount(e), 0);
 
   return {
     queue,
@@ -208,6 +242,7 @@ export function useCollector() {
     setTarget,
     remove,
     toggle,
+    toggleCopy,
     reorder,
     addOrMerge,
     isQueued,

@@ -1,6 +1,10 @@
 import { characters, weapons, wedges } from "../data";
 import { ELEMENT_COLORS } from "../constants";
-import type { CollectionEntry } from "../types/collector";
+import {
+  entryCollectedCount,
+  entryIsComplete,
+  type CollectionEntry,
+} from "../types/collector";
 import type { QueueGroup } from "./collectionQueue";
 import { resolveCollectionItem } from "./collectionItems";
 
@@ -14,6 +18,8 @@ export interface BoardSpace {
   subtitle?: string;
   accent: string;
   wedgeRarity?: string;
+  /** Characters: intron level. Weapons/wedges: copies needed. */
+  target: number;
 }
 
 export interface BoardRegion {
@@ -53,6 +59,7 @@ export function buildBoardRegions(groups: QueueGroup[]): BoardRegion[] {
       portrait: parentResolved?.portrait ?? "",
       subtitle: parentResolved?.subtitle,
       accent: accentForEntry(group.parent),
+      target: group.parent.target,
     });
 
     for (const wedge of group.wedges) {
@@ -68,10 +75,12 @@ export function buildBoardRegions(groups: QueueGroup[]): BoardRegion[] {
         subtitle: resolved?.subtitle,
         accent: accentForEntry(wedge),
         wedgeRarity: wedgeData?.rarity,
+        target: wedge.target,
       });
     }
 
-    const collected = spaces.filter((s) => s.entry.collected).length;
+    const collected = spaces.reduce((sum, s) => sum + entryCollectedCount(s.entry), 0);
+    const total = spaces.reduce((sum, s) => sum + s.target, 0);
 
     return {
       index: groupIndex + 1,
@@ -79,7 +88,7 @@ export function buildBoardRegions(groups: QueueGroup[]): BoardRegion[] {
       parentType: group.parent.type as "character" | "weapon",
       spaces,
       collected,
-      total: spaces.length,
+      total,
     };
   });
 }
@@ -90,7 +99,7 @@ export function flatBoardSpaces(regions: BoardRegion[]): BoardSpace[] {
 
 /** Index of the next space to conquer; equals total when complete. */
 export function boardFrontierIndex(spaces: BoardSpace[]): number {
-  const next = spaces.findIndex((s) => !s.entry.collected);
+  const next = spaces.findIndex((s) => !entryIsComplete(s.entry));
   return next === -1 ? spaces.length : next;
 }
 
