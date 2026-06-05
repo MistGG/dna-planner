@@ -40,7 +40,7 @@ Deployed to GitHub Pages on push to `main`:
 
 [https://mistgg.github.io/dna-planner/](https://mistgg.github.io/dna-planner/)
 
-In the repo settings, set **Pages → Build and deployment → Source** to **GitHub Actions** if the first deploy does not start automatically.
+In the repo settings, set **Pages → Build and deployment → Source** to **Deploy from a branch**, branch **gh-pages**, folder **/ (root)**.
 
 ## Data attribution
 
