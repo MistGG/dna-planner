@@ -20,6 +20,7 @@ import type { ParsedGuide } from "../utils/parseBuildGuide";
 import { useSavedGuidesContext } from "../context/SavedGuidesContext";
 import { enrichGuideParents } from "../utils/guideWedgeParent";
 import { createSavedGuide } from "../utils/savedGuideFromImport";
+import { WedgeHoverDetail } from "../components/WedgeHoverDetail";
 import { WedgeMeta } from "../components/WedgeMeta";
 import { wedgeRarityClass } from "../utils/wedges";
 
@@ -392,12 +393,14 @@ export function GuideImportPage() {
                         aria-label={`Include ${item.parsed.label}`}
                       />
                     </label>
-                    {isWedge && selectedOpt?.portrait && (
-                      <img
-                        src={selectedOpt.portrait}
-                        alt=""
-                        className="guide-import__wedge-img"
-                      />
+                    {isWedge && selectedOpt?.portrait && selectedOpt.id && (
+                      <WedgeHoverDetail wedgeId={selectedOpt.id} className="guide-import__wedge-img-wrap">
+                        <img
+                          src={selectedOpt.portrait}
+                          alt=""
+                          className="guide-import__wedge-img"
+                        />
+                      </WedgeHoverDetail>
                     )}
                     <div className="guide-import__item-main">
                       <strong className="guide-import__item-name">
@@ -435,7 +438,13 @@ export function GuideImportPage() {
                           className={`guide-import__choice${item.parsed.kind === "wedge" ? ` guide-import__choice--wedge ${wedgeRarityClass(opt.rarity)}` : ""}${item.selectedId === opt.id ? " guide-import__choice--on" : ""}`}
                           onClick={() => updateChoice(item.parsed.id, opt.id)}
                         >
-                          <img src={opt.portrait} alt="" />
+                          {item.parsed.kind === "wedge" ? (
+                            <WedgeHoverDetail wedgeId={opt.id} className="guide-import__choice-img-wrap">
+                              <img src={opt.portrait} alt="" />
+                            </WedgeHoverDetail>
+                          ) : (
+                            <img src={opt.portrait} alt="" />
+                          )}
                           <span>{opt.name}</span>
                           {opt.slotLabel ? (
                             <WedgeMeta

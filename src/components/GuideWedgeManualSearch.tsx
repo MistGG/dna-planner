@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { searchGuideWedgeOptions } from "../utils/guideResolve";
+import { WedgeHoverDetail } from "./WedgeHoverDetail";
 import { WedgeMeta } from "./WedgeMeta";
 import { wedgeRarityClass } from "../utils/wedges";
 
@@ -68,7 +69,9 @@ export function GuideWedgeManualSearch({
                 setQuery("");
               }}
             >
-              <img src={opt.portrait} alt="" />
+              <WedgeHoverDetail wedgeId={opt.id} className="guide-import__choice-img-wrap">
+                <img src={opt.portrait} alt="" />
+              </WedgeHoverDetail>
               <span>{opt.name}</span>
               {opt.slotLabel && (
                 <WedgeMeta slot={opt.slotLabel} element={opt.element} compact />

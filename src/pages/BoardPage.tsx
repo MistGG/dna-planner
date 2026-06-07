@@ -14,6 +14,7 @@ import {
   entryIsComplete,
   formatTarget,
 } from "../types/collector";
+import { WedgeHoverDetail } from "../components/WedgeHoverDetail";
 import { boardWedgeRarityClass } from "../utils/wedges";
 import type { BoardSpace } from "../utils/boardGame";
 
@@ -29,7 +30,6 @@ function BoardSpaceCard({
   isDone,
   isFuture,
   pawnPortrait,
-  onToggle,
   onToggleCopy,
 }: {
   space: BoardSpace;
@@ -37,14 +37,11 @@ function BoardSpaceCard({
   isDone: boolean;
   isFuture: boolean;
   pawnPortrait: string | null;
-  onToggle: () => void;
   onToggleCopy: (tickIndex: number) => void;
 }) {
   const { entry } = space;
   const target = entry.target;
   const collectedCount = entryCollectedCount(entry);
-  const multiCopy = target > 1;
-
   const cardClass = [
     "board-space",
     `board-space--${entry.type}`,
@@ -53,7 +50,7 @@ function BoardSpaceCard({
     isDone ? "board-space--done" : "",
     isFrontier ? "board-space--frontier" : "",
     isFuture ? "board-space--future" : "",
-    multiCopy ? "board-space--multi" : "",
+    "board-space--multi",
   ]
     .filter(Boolean)
     .join(" ");
@@ -64,7 +61,13 @@ function BoardSpaceCard({
         <img src={pawnPortrait} alt="" className="board-pawn" />
       )}
       <span className="board-space__ring" aria-hidden="true" />
-      <img src={space.portrait} alt="" className="board-space__portrait" />
+      {entry.type === "wedge" ? (
+        <WedgeHoverDetail wedgeId={entry.itemId} className="board-space__portrait-wrap">
+          <img src={space.portrait} alt="" className="board-space__portrait" />
+        </WedgeHoverDetail>
+      ) : (
+        <img src={space.portrait} alt="" className="board-space__portrait" />
+      )}
       <span className="board-space__glyph">
         {typeGlyph(entry.type, space.isParent)}
       </span>
@@ -75,60 +78,46 @@ function BoardSpaceCard({
 
   return (
     <div className="board-space-stack">
-      {multiCopy ? (
-        <div
-          className={cardClass}
-          style={{ "--space-accent": space.accent } as CSSProperties}
-          title={`${space.name} (${formatTarget(entry)})`}
-        >
-          {cardBody}
-        </div>
-      ) : (
-        <button
-          type="button"
-          className={cardClass}
-          style={{ "--space-accent": space.accent } as CSSProperties}
-          onClick={onToggle}
-          title={`${isDone ? "Collected" : "Mark collected"}: ${space.name}`}
-        >
-          {cardBody}
-        </button>
-      )}
+      <div
+        className={cardClass}
+        style={{ "--space-accent": space.accent } as CSSProperties}
+        title={`${space.name} (${formatTarget(entry)})`}
+      >
+        {cardBody}
+      </div>
 
-      {multiCopy && (
-        <div
-          className="board-space__ticks"
-          role="group"
-          aria-label={`${space.name}: ${collectedCount} of ${target} ${entry.type === "character" ? "intron steps" : "copies"}`}
-        >
-          {Array.from({ length: target }, (_, ti) => {
-            const filled = ti < collectedCount;
-            const isNext = ti === collectedCount && isFrontier;
-            return (
-              <button
-                key={ti}
-                type="button"
-                className={`board-space__tick${filled ? " board-space__tick--on" : ""}${isNext ? " board-space__tick--next" : ""}`}
-                onClick={() => onToggleCopy(ti)}
-                aria-pressed={filled}
-                aria-label={
-                  entry.type === "character"
-                    ? `Intron I${ti + 1}${filled ? " obtained" : ""}`
-                    : `Copy ${ti + 1} of ${target}${filled ? " collected" : ""}`
-                }
-              >
-                {filled ? "✓" : null}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      <div
+        className="board-space__ticks"
+        role="group"
+        aria-label={`${space.name}: ${collectedCount} of ${target} ${entry.type === "character" ? "intron steps" : "copies"}`}
+      >
+        {Array.from({ length: target }, (_, ti) => {
+          const filled = ti < collectedCount;
+          const isNext = ti === collectedCount && isFrontier;
+          return (
+            <button
+              key={ti}
+              type="button"
+              className={`board-space__tick${filled ? " board-space__tick--on" : ""}${isNext ? " board-space__tick--next" : ""}`}
+              onClick={() => onToggleCopy(ti)}
+              aria-pressed={filled}
+              aria-label={
+                entry.type === "character"
+                  ? `Intron I${ti + 1}${filled ? " obtained" : ""}`
+                  : `Copy ${ti + 1} of ${target}${filled ? " collected" : ""}`
+              }
+            >
+              {filled ? "✓" : null}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 export function BoardPage() {
-  const { groups, stats, toggle, toggleCopy, watermark } = useCollectorContext();
+  const { groups, stats, toggleCopy, watermark } = useCollectorContext();
 
   const regions = useMemo(() => buildBoardRegions(groups), [groups]);
   const spaces = useMemo(() => flatBoardSpaces(regions), [regions]);
@@ -252,7 +241,6 @@ export function BoardPage() {
                             isDone={isDone}
                             isFuture={isFuture}
                             pawnPortrait={pawnPortrait}
-                            onToggle={() => toggle(space.entry.id)}
                             onToggleCopy={(ti) => toggleCopy(space.entry.id, ti)}
                           />
                         </div>

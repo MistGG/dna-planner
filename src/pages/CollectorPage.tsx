@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useCollectorContext } from "../context/CollectorContext";
 import { wedges } from "../data";
 import { resolveCollectionItem, typeLabel } from "../utils/collectionItems";
+import { WedgeHoverDetail } from "../components/WedgeHoverDetail";
 import { queueWedgeRarityClass } from "../utils/wedges";
 import type { CollectionEntry } from "../types/collector";
 
@@ -148,7 +149,13 @@ function QueueRow({
         <span className="queue-row__check-box" />
       </label>
 
-      <img src={item.portrait} alt="" className="queue-row__img" loading="lazy" draggable={false} />
+      {entry.type === "wedge" ? (
+        <WedgeHoverDetail wedgeId={entry.itemId} className="queue-row__img-wrap">
+          <img src={item.portrait} alt="" className="queue-row__img" loading="lazy" draggable={false} />
+        </WedgeHoverDetail>
+      ) : (
+        <img src={item.portrait} alt="" className="queue-row__img" loading="lazy" draggable={false} />
+      )}
 
       <div className="queue-row__info">
         <span className="queue-row__name">{item.name}</span>

@@ -1,5 +1,8 @@
 import type { ReactNode } from "react";
+import { wedges } from "../data";
 import type { SavedGuideEntry } from "../types/savedGuide";
+import { WedgeHoverDetail } from "./WedgeHoverDetail";
+import { wedgeDisplayName } from "../utils/wedges";
 import {
   groupEntriesBySection,
   parseGuideDisplayBlocks,
@@ -24,12 +27,28 @@ function DisplayBlock({ block }: { block: GuideDisplayBlock }) {
   }
 }
 
+function wedgeIdForSavedEntry(entry: SavedGuideEntry): string | undefined {
+  if (entry.kind !== "wedge") return undefined;
+  return wedges.find(
+    (w) => wedgeDisplayName(w) === entry.name || w.name === entry.name
+  )?.id;
+}
+
 function ImportedEntry({ entry }: { entry: SavedGuideEntry }) {
+  const wedgeId = wedgeIdForSavedEntry(entry);
+  const portrait = entry.portrait ? (
+    wedgeId ? (
+      <WedgeHoverDetail wedgeId={wedgeId} className="guide-doc__imported-img-wrap">
+        <img src={entry.portrait} alt="" className="guide-doc__imported-img" />
+      </WedgeHoverDetail>
+    ) : (
+      <img src={entry.portrait} alt="" className="guide-doc__imported-img" />
+    )
+  ) : null;
+
   return (
     <li className="guide-doc__imported">
-      {entry.portrait && (
-        <img src={entry.portrait} alt="" className="guide-doc__imported-img" />
-      )}
+      {portrait}
       <div className="guide-doc__imported-body">
         <span className="guide-doc__imported-name">
           {entry.name}

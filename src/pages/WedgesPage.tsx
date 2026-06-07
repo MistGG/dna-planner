@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { wedges } from "../data";
 import { CollectionControl } from "../components/CollectionControl";
+import { WedgeDetailCard } from "../components/WedgeDetailCard";
+import { WedgeHoverDetail } from "../components/WedgeHoverDetail";
 import { WedgeMeta } from "../components/WedgeMeta";
 import { useCollectorContext } from "../context/CollectorContext";
 import { SearchFilters } from "../components/SearchFilters";
@@ -213,9 +215,9 @@ export function WedgesPage() {
                 {isCollected("wedge", w.id, parentId) && (
                   <span className="db-card__owned">✓</span>
                 )}
-                <div className="db-card__media db-card__media--wedge">
+                <WedgeHoverDetail wedgeId={w.id} className="db-card__media db-card__media--wedge">
                   <img src={w.portrait} alt="" className="db-card__img" loading="lazy" />
-                </div>
+                </WedgeHoverDetail>
                 <div className="db-card__body">
                   <span className="db-card__name">{wedgeDisplayName(w)}</span>
                   <WedgeMeta
@@ -232,10 +234,7 @@ export function WedgesPage() {
 
         {selected && (
           <aside className={`detail-panel detail-panel--wedge ${wedgeRarityClass(selected.rarity)}`}>
-            <img src={selected.portrait} alt="" className="detail-panel__hero" />
-            <div className="detail-panel__head">
-              <h2>{wedgeDisplayName(selected)}</h2>
-            </div>
+            <WedgeDetailCard wedge={selected} className="wedge-detail-card--inline" />
             {parentId ? (
               <>
                 {!selectedCompatible && (
@@ -255,38 +254,6 @@ export function WedgesPage() {
                 Add a character or weapon to your collection before attaching wedges.
               </p>
             )}
-            <div className="detail-panel__facts">
-              <div className="detail-panel__line">{wedgeSlotLabel(selected)}</div>
-              {wedgeElementLabel(selected) && (
-                <div className="detail-panel__line">{wedgeElementLabel(selected)}</div>
-              )}
-              <div className="detail-panel__line">Tolerance {selected.tolerance}</div>
-              <div className="detail-panel__line">Track {selected.track}</div>
-              {selected.polarity && (
-                <div className="detail-panel__line">Polarity {selected.polarity}</div>
-              )}
-              <div className="detail-panel__line">
-                {selected.restriction.join(" · ")}
-              </div>
-            </div>
-            <div className="detail-section">
-              <h3>Main Effect</h3>
-              <ul>
-                {selected.mainEffect.map((e, i) => (
-                  <li key={i}>{e}</li>
-                ))}
-              </ul>
-            </div>
-            {selected.subEffect.length > 0 && (
-              <div className="detail-section">
-                <h3>Sub Effect</h3>
-                <p>{selected.subEffect.join(" ")}</p>
-              </div>
-            )}
-            <div className="detail-section">
-              <h3>Source</h3>
-              <p>{selected.sourceLevel.join(", ")}</p>
-            </div>
           </aside>
         )}
       </div>
